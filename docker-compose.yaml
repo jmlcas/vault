@@ -1,5 +1,3 @@
-version: '3.3'
-
 services:
 
   vault:
@@ -16,10 +14,4 @@ services:
       - ./vault-config:/vault/config
     cap_add:
       - IPC_LOCK
-    networks:
-      - vault_network
-
-networks:
-  vault_network:
-
             
